@@ -1,6 +1,6 @@
 {
   "name": "realm-jsdoc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bootstrap template for JSDoc 3",
   "main": "gulpfile.js",
   "dependencies": {},
