@@ -1,6 +1,6 @@
 {
-  "name": "ui-jsdoc",
-  "version": "0.0.1",
+  "name": "realm-jsdoc",
+  "version": "0.0.2",
   "description": "Bootstrap template for JSDoc 3",
   "main": "gulpfile.js",
   "dependencies": {},
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/frzy/ui-jsdoc.git"
+    "url": "git://github.com/fogine/realm-jsdoc.git"
   },
   "keywords": [
     "jsdoc",
@@ -29,9 +29,12 @@
     "template"
   ],
   "author": "frzy",
+  "contributors": [
+    {
+      "name": "fogine",
+      "email": "fogine@openmailbox.com"
+    }
+  ],
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/frzy/ui-jsdoc/issues"
-  }
+  "readmeFilename": "README.md"
 }
