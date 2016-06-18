@@ -1,0 +1,27 @@
+<?js
+var item = obj;
+var tutorials = item.tutorials;
+var self = this;
+var icon = '<i class="fa fa-code fa-lg"></i>';
+var arrow = '<span class="arrow"></span>';
+?>
+<li id="nav-Tutorials-item" data-toggle="collapse" data-target="#nav-Tutorials" class="collapsed">
+<?js= '<span style="padding-left:10px"' + self.linkto('Tutorials', icon + ' Tutorials' + arrow) + "</span>"?>
+<ul class="sub-menu collapse" id="nav-Tutorials">
+    <?js if (tutorials.length) { ?>
+        <?js tutorials.forEach(function(tutorial) { ?>
+            <li>
+                <div class="section-header"><?js= tutorial.title ?></div>
+                    <?js if (!tutorial.children.length) { ?>
+                           <?js= self.tutoriallink(tutorial.longname, tutorial.name, '') ?>
+                        <?js } else {
+                            tutorial.children.forEach(function(subTutorial) { ?>
+                                <?js= self.tutoriallink(subTutorial.longname, subTutorial.name, '') ?>
+                            <?js });
+                        }
+                    ?>
+            </li>
+        <?js }) ?>
+    <?js } ?>
+</ul>
+</li>
