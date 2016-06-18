@@ -1,6 +1,9 @@
 Realm template for JSDoc 3
 ===
 
+This is fork of [https://github.com/realm/realm-jsdoc](realm-jsdoc) which adds "tutorials" to the side menu bar.  
+Also it supports new static files option name "include" as well as deprecated one "paths"
+
 Usage
 ---
 1. To generate docs from the sample files:
